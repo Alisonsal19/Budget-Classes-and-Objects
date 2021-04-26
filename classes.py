@@ -35,9 +35,9 @@ class Category:
     def transfer(self, amount,category):
         # transfer between two instantiated categories
         #self.amount += amount
-        self.amount -= amount        
+        #self.amount -= amount        
 
-        return "Successful transfer of {} to {} category".format(amount, self.category)
+        return self.withdrawal(amount) + " to " + category.deposit(amount)
 
 
 # print(v.deposit())
